@@ -1,3 +1,6 @@
+
+#$PATH = ~/AppData/Roaming/nushell/config.nu
+
 # config.nu
 #
 # Installed by:
