@@ -1,0 +1,80 @@
+#$PATH = ~\AppData\Roaming\alacritty\alacritty.toml
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = "full"
+startup_mode = "Windowed"
+opacity = 0.90
+blur = true
+dynamic_padding = true
+dimensions = { columns = 110, lines = 30 }
+padding = { x = 12, y = 12 }
+
+[font]
+# Make sure "FiraCode Nerd Font" is installed on your system
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
+bold = { family = "FiraCode Nerd Font", style = "Bold" }
+italic = { family = "FiraCode Nerd Font", style = "Italic" }
+size = 14
+
+[terminal.shell]
+# This looks for nu in your PATH. 
+# If it fails, replace "nu.exe" with the full path from `where.exe nu`
+program = "nu.exe"
+args = ["--interactive"]
+
+# Catppuccin Mocha Colors
+[colors.primary]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+dim_foreground = "#7f849c"
+bright_foreground = "#cdd6f4"
+
+[colors.cursor]
+text = "#1e1e2e"
+cursor = "#f5e0dc"
+
+[colors.selection]
+text = "#cdd6f4"
+background = "#45475a"
+
+[colors.normal]
+black   = "#45475a"
+red     = "#f38ba8"
+green   = "#a6e3a1"
+yellow  = "#f9e2af"
+blue    = "#89b4fa"
+magenta = "#f5c2e7"
+cyan    = "#94e2d5"
+white   = "#bac2de"
+
+[colors.bright]
+black   = "#585b70"
+red     = "#f38ba8"
+green   = "#a6e3a1"
+yellow  = "#f9e2af"
+blue    = "#89b4fa"
+magenta = "#f5c2e7"
+cyan    = "#94e2d5"
+white   = "#a6adc8"
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 500
+unfocused_hollow = true
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+  { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+  { key = "Return", mods = "Alt", action = "ToggleFullscreen" }
+]
+
+[scrolling]
+history = 10000
+multiplier = 3

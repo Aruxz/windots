@@ -22,10 +22,15 @@
 
 $env.config.show_banner = false
 
+alias lsr = ls **/*
+alias tree = ^tree /F
+alias grep = find
 alias cat = open
 #alias less = open | table -e
 alias sudo = gsudo
 alias file = explorer.exe
 alias ll = ls -la
 alias man = help
+
+
 
